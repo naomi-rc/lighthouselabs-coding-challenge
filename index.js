@@ -15,3 +15,14 @@ function countEssential(){
   }
   return count;
 }
+
+for(var i in availableModules){
+    if(availableModules[i].name == "life-support"){
+      loadModules(i);
+    }
+}
+
+function loadModules(index){
+  availableModules[index].enabled = true;
+  ship.modules.push(availableModules[index]);
+}

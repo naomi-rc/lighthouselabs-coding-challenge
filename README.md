@@ -53,6 +53,12 @@ You can re-use your code from before, but this time you should do what all good 
 Use your findModuleIndex function to find the "propulsion" module and then load it into the ship's system.
 
 
+## Challenge #6
+"NAVIGATION SYSTEM needed," LARRY tells you. Navigation is important - you can't move through space without it!
+
+Use your already-defined methods and load in the "navigation" module. It's pretty simple once you have the functions to do it, and LARRY's eyes are finally easing from red back to normal.
+
+
 
 
 

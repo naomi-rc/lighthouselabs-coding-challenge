@@ -31,3 +31,4 @@ function loadModules(index){
 
 loadModule(findModuleIndex("life-support"));
 loadModule(findModuleIndex("propulsion"));
+loadModule(findModuleIndex("navigation"));

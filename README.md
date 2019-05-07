@@ -45,6 +45,15 @@ When loadModule gets the index number of a module, it should load the correspond
 **Hint:** You need to either loop through availableModules outside of any function or write a seperate function that handles the looping make sure it is called in your code"
 
 
+## Challenge #5
+"BREATHE EASIER!" LARRY quacks out. "LITERALLY. Life support module loaded. Propulsion needed."
+
+You can re-use your code from before, but this time you should do what all good programmers do: modularize your code. Write a function called findModuleIndex() which will take in a name that you’re looking for, and return the index of that module in the availableModules array. Remember: it has to have the essential flag, too!
+
+Use your findModuleIndex function to find the "propulsion" module and then load it into the ship's system.
+
+
+
 
 
 

@@ -16,13 +16,18 @@ function countEssential(){
   return count;
 }
 
-for(var i in availableModules){
-    if(availableModules[i].name == "life-support"){
-      loadModules(i);
+function findModuleIndex(name) {
+  for (var i = 0; i < availableModules.length; i++) {
+    if(availableModules[i].name == name && availableModules[i].essential) {
+      return i;
     }
+  }
 }
 
 function loadModules(index){
   availableModules[index].enabled = true;
   ship.modules.push(availableModules[index]);
 }
+
+loadModule(findModuleIndex("life-support"));
+loadModule(findModuleIndex("propulsion"));

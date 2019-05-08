@@ -18,7 +18,7 @@ function countEssential(){
 
 function findModuleIndex(name) {
   for (var i = 0; i < availableModules.length; i++) {
-    if(availableModules[i].name == name && availableModules[i].essential) {
+    if(availableModules[i].name == name) {
       return i;
     }
   }
@@ -38,5 +38,6 @@ function resetLARRY(){
 loadModule(findModuleIndex("life-support"));
 loadModule(findModuleIndex("propulsion"));
 loadModule(findModuleIndex("navigation"));
+loadModule(findModuleIndex("communication"));
 
 resetLARRY();

@@ -47,3 +47,9 @@ function setMessage() {
 }
 
 setMessage();
+
+function activateBeacon(){
+  radio.beacon = true;
+}
+
+activateBeacon();

@@ -81,7 +81,10 @@ This is where you learn about something called JSON. JSON stands for JavaScript 
 You need to write a function called setMessage(). This function should set the message property on the radio object to be the JSON version of the navigation object. Don't forget you need to call your setMessage() function.
 
 
+## Challenge #10
+"Beacon not sending!" LARRY is still blaring, and it’s time for step two: activate the beacon.
 
+You check out the radio object, and see that it has a 'beacon' property. Now that the message is set, write a function called activateBeacon() which will set the beacon property to true.
 
 
 

@@ -64,3 +64,16 @@ function initialize(){
   navigation.y = 0;
   navigation.z = 0;
 }
+
+function calibrateX(){
+  for(var i = 0; i < 12; i++){
+    var signal = checkSignal();
+    if(signal){
+      navigation.x = signal;
+      break;
+    }
+  }
+}
+
+calibrateX();
+

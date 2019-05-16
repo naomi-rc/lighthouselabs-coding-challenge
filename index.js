@@ -75,5 +75,27 @@ function calibrateX(){
   }
 }
 
+function calibrateY(){
+  for(var i = 0; i < 60; i++){
+    var signal = checkSignal();
+    if(signal){
+      navigation.y = signal;
+      break;
+    }
+  }
+}
+
+function calibrateZ(){
+  for(var i = 0; i < 60; i++){
+    var signal = checkSignal();
+    if(signal){
+      navigation.z = signal;
+      break;
+    }
+  }
+}
+
 calibrateX();
+calibrateY();
+calibrateZ();
 

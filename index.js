@@ -101,10 +101,15 @@ function calibrate(){
   calibrateZ();
 }
 
-
 function setSpeed(speed){
   var speedInt = parseInt(speed);
   if(speedInt >= 0){
     navigation.speed = parseInt(speed);
   }
 }
+
+function activateAntenna(){
+  ship.antenna.active = true;
+}
+
+activateAntenna();

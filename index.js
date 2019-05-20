@@ -112,12 +112,16 @@ function activateAntenna(){
   ship.antenna.active = true;
 }
 
-activateAntenna();
-
 function sendBroadcast(){
   for(var i = 0; i < 100; i++){
     broadcast();
   }
 }
 
-sendBroadcast();
+function configureBroadcast(){
+  setFrequency();
+  sendBroadcast();
+  activateAntenna();
+}
+
+configureBroadcast();

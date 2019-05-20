@@ -113,3 +113,11 @@ function activateAntenna(){
 }
 
 activateAntenna();
+
+function sendBroadcast(){
+  for(var i = 0; i < 100; i++){
+    broadcast();
+  }
+}
+
+sendBroadcast();

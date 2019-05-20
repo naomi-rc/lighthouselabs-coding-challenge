@@ -125,3 +125,12 @@ function configureBroadcast(){
 }
 
 configureBroadcast();
+
+function decodeMessage(message){
+  var vowels = ['o', 'i', 'u', 'e', 'a', 'y'];
+  for(var vowel in vowels){
+    var rgx = new RegExp(vowel, "gi");
+    message = message.replace(rgx, vowels[vowel]);
+  }
+  return message;
+}

@@ -134,3 +134,14 @@ function decodeMessage(message){
   }
   return message;
 }
+
+function returnToEarth(){
+  var x = broadcast("x");
+  var y = broadcast("y");
+  var z = broadcast("z");
+  navigation.x = parseInt(decodeMessage(x), 16);
+  navigation.y = parseInt(decodeMessage(y), 16);
+  navigation.z = parseInt(decodeMessage(z), 16);
+}
+
+returnToEarth();

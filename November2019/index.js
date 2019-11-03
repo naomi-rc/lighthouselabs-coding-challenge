@@ -15,3 +15,16 @@ const interviewAnswer = (topic) => {
   return response;
 }
 
+//Challenge #3
+const castVote = (name, votes) => {
+  var candidate = 0;
+  switch(name){
+    case "Tim": candidate = 0; break;
+    case "Sally": candidate = 1; break;
+    case "Beth": candidate = 2; break;
+  }
+  
+  votes[candidate]++;
+  return votes;
+}
+

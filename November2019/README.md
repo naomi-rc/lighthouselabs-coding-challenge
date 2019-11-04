@@ -25,6 +25,11 @@ When a resident casts their vote, the system will be passed the name of the cand
 To test the system, we'll need to complete the function castVote(name, votes) that takes in the name of a candidate and an array of tallied votes. The function should return an array with the updated standings. 
 We will be testing the system with three possible candidates: Tim, Sally and Beth. Each item in the votes array represents the number of votes for a particular candidate: 
 The first item in the array votes[0] are the votes for Tim
-The second item in the arry votes[1] are the votes for Sally
+The second item in the array votes[1] are the votes for Sally
 The third item in the array votes[2] are the votes for Beth
 For example in this array [0, 2, 1] there are 0 votes for Tim, 2 votes for Sally and 1 vote for Beth. 
+
+## Challenge #4 - This is How You Remind Me (To Register To Vote)
+Now that you've squashed all the bugs in the city's new voting software, it's time to jump back on the campaign trail. The election is coming up soon! You need to send out reminders to all Codeville citizens to encourage them to vote, but you don't want to spam people who have already registered. Use JavaScript to remove all registered voters from your contact list. 
+### Instructions
+Complete the function registerToVote(name, unregisteredVoters) that takes in the name of a newly registered voter and an array of names of those who have not yet registered to vote. Your function must return an array, with the newly registered voter's name removed. 

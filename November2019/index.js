@@ -28,3 +28,13 @@ const castVote = (name, votes) => {
   return votes;
 }
 
+//Challenge #4
+const registerToVote = (name, unregisteredVoters) => {
+  var registeredVoters = [];
+  for(var i = 0; i < unregisteredVoters.length; i++){
+    if(unregisteredVoters[i] != name){
+      registeredVoters.push(unregisteredVoters[i]);
+    }
+  }
+  return registeredVoters;
+}

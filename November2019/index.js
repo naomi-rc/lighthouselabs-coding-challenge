@@ -38,3 +38,24 @@ const registerToVote = (name, unregisteredVoters) => {
   }
   return registeredVoters;
 }
+
+//Challenge #5
+const chooseStations = (stations) => {
+  var acceptableCapacity = 20;
+  var acceptableStations = [];
+  
+  
+  var name = 0;
+  var capacity = 1;
+  var type = 2;
+  for(var i in stations){
+    if(stations[i][capacity] >= acceptableCapacity){
+      if(stations[i][type] == "school" || stations[i][type] == "community centre"){
+        acceptableStations.push(stations[i][name]);
+      }
+    }
+  }
+  return acceptableStations;
+}
+
+

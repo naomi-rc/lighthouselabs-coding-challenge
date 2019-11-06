@@ -18,7 +18,6 @@ When asked about transportation, the function should return "It's going to be a 
 If you're asked about a topic that isn't in the list above, respond with a default statement. (For example, "QUACK!") 
 
 ## Challenge #3 - Securing the Vote
-Click here to learn how to navigate the code editor
 It looks like you've got a hold of your campaign for now. So you've been asked to turn your attention to making sure the election infrastructure is ready to go! Codeville County is using a new e-voting platform to make elections simpler and more secure. We need to test out the software to make sure it's working correctly before Election Day. 
 ### Instructions
 When a resident casts their vote, the system will be passed the name of the candidate they voted for and the current standings. It will then update the standings, adding the new vote to the count. 
@@ -33,3 +32,10 @@ For example in this array [0, 2, 1] there are 0 votes for Tim, 2 votes for Sally
 Now that you've squashed all the bugs in the city's new voting software, it's time to jump back on the campaign trail. The election is coming up soon! You need to send out reminders to all Codeville citizens to encourage them to vote, but you don't want to spam people who have already registered. Use JavaScript to remove all registered voters from your contact list. 
 ### Instructions
 Complete the function registerToVote(name, unregisteredVoters) that takes in the name of a newly registered voter and an array of names of those who have not yet registered to vote. Your function must return an array, with the newly registered voter's name removed. 
+
+## Challenge #5 - Voting Station Calculation
+The election is looming, and the dutiful City of Codeville staff has finalized most of the details, except for one thing: where will citizens vote? There are hundreds of buildings in town, but there are very specific requirements for what constitutes an acceptable voting station. With very little time to decide, the city needs our help to sort through the building data. 
+### Instructions
+Complete the function chooseStations(stations) that takes in an array of possible voting stations, and then only returns the names of the stations that are appropriate. 
+Your function will receive an array of stations, where each station itself is an array with a name, a capacity, and a venue type. 
+In order for a station to be deemed appropriate, it must have a capacity of at least 20, and be a school or community centre. 

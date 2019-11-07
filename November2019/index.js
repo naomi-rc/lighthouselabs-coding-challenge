@@ -74,4 +74,18 @@ const voterTurnout = (voter_signatures, voter_ids) => {
   return turnout;
 }
 
+//Challenge #7
+const termTopics = (interviews) => {
+  var topics = [0, 0, 0];
+  for(var i = 0; i < interviews.length; i++){
+    switch(interviews[i]){
+      case "smart city": topics[0]++; break;
+      case "arts funding": topics[1]++; break;
+      case "transportation": topics[2]++; break;
+    }
+    
+  }
+  return topics;
+}
+
 

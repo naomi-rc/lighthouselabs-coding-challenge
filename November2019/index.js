@@ -58,4 +58,20 @@ const chooseStations = (stations) => {
   return acceptableStations;
 }
 
+//Challenge #6
+const voterTurnout = (voter_signatures, voter_ids) => {
+  var turnout = "All clear, we can count the votes!";
+  if(voter_signatures.length == voter_ids.length){
+    for(var voter in voter_ids){
+      if(voter_ids[voter] != voter_signatures[voter]){
+        turnout = "FRAUD!";
+      }
+    }
+  }
+  else{
+    turnout = false;
+  }
+  return turnout;
+}
+
 

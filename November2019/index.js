@@ -88,4 +88,9 @@ const termTopics = (interviews) => {
   return topics;
 }
 
+//Challenge #8
+const smartGarbage = (trash, bins) => {
+    bins[trash]++;
+    return bins;
+}
 

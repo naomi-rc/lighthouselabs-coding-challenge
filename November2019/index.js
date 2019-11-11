@@ -100,3 +100,43 @@ const carPassing = (cars, speed) => {
   return cars;
 }
 
+//Challenge #10
+const whereCanIPark = (spots, vehicle) => {
+  var foundSpot = false;
+  for(var x = 0; x < spots.length && foundSpot !== true; x++){
+    for(var y = 0; y < spots[x].length && foundSpot !== true; y++){
+      if(canPark(spots[x][y], vehicle)){
+        foundSpot = [x, y];
+      }
+    }
+  }
+  
+  return foundSpot;
+}
+
+const canPark = (spot, vehicle) => {
+  var canPark = false;
+  switch(vehicle){
+    case "regular": 
+      if(spot == "R"){
+        canPark = true;
+      }; 
+    break;
+    
+    case "small": 
+      if(spot == "R" || spot == "S"){
+        canPark = true;
+      }; 
+    break;
+    
+    case "motorcycle": 
+      if(spot == "R" || spot == "S" || spot == "M"){
+        canPark = true;
+      }; 
+    break;
+    
+  }
+  return canPark;
+}
+
+

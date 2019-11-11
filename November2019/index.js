@@ -94,3 +94,9 @@ const smartGarbage = (trash, bins) => {
     return bins;
 }
 
+//Challenge #9
+const carPassing = (cars, speed) => {
+  cars.push({"time": Date.now(), "speed": speed});
+  return cars;
+}
+

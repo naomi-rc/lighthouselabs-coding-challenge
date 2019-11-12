@@ -71,3 +71,9 @@ We need to write a function called whereCanIPark() that returns the coordinates 
 There are three kinds of possible vehicles: regular cars, small cars, and motorcycles. Regular cars can only park in R spots. Small cars can park in R or S spots. Motorcycles can park in R, S, or M spots. In the array of parking spots, spots are written in both lower-case and upper-case. An upper-case letter means that the particular spot is AVAILABLE, while lower-case letters mean that the spot is UNAVAILABLE. 
 Our function must return an array with the coordinates of the spot as an [X, Y] pair. See the example input and output below for an illustration. 
 Note: There may be multiple available spots for a particular vehicle. It does not matter which spot your function chooses, as long as the spot is available. And if there are no available spots, remember to return false. 
+
+## Challenge #11 - You Can't Hurry Transit
+You can't hurry love, or local transit in Codeville. While you've been hard at work on a solution to the larger transit woes, you've decided to implement a new system to at least be a little more transparent about wait times. The city will be installing a smart screen, at the busiest bus stop in town, that will show the estimated arrival times for each of the buses that stop there. 
+### Instructions
+For this challenge, we'll implement a function called busTimes(). This function will calculate the arrival time for a collection of buses based on their current speed and distance from the stop. It will receive an object called buses, which contains a series of objects for each bus, with the distance of the bus and the speed that the bus is traveling at. Our function should return a new object that shows how long until each bus arrives at the stop. 
+

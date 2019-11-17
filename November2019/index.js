@@ -147,5 +147,18 @@ const busTimes = buses => {
   return arrivals;
 }
 
+//Challenge #12
+const checkAir = function (samples, threshold) {
+  var total = samples.length;
+  var dirty = 0;
+  
+  for(var sample in samples){
+    if(samples[sample] == "dirty"){
+      dirty++;
+    }
+  }
+  return ((dirty/total) > threshold)? "Polluted" : "Clean";
+}
+
 
 

@@ -160,5 +160,29 @@ const checkAir = function (samples, threshold) {
   return ((dirty/total) > threshold)? "Polluted" : "Clean";
 }
 
+//Challenge #13
+const toggle = function (lights, status){
+  for(var light in lights){
+    lights[light]["on"] = status;
+  }
+  return lights;
+}
 
+const lightsOn = function(lights) {
+  return toggle(lights, true);
+}
+
+const lightsOff = function(lights) {
+  return toggle(lights, false);
+}
+
+const toggleLights = function(lights, lightsAreOn) {
+  if(lightsAreOn){
+    lights = lightsOff(lights);
+  } 
+  else{
+    lights = lightsOn(lights);
+  }
+  return lights;
+}
 

@@ -192,3 +192,19 @@ const dynamicPricing = (numberOfPeople, distanceTraveled) => {
   price += (numberOfPeople >= 30)? 0.25 : 0;
   return "$" + price.toFixed(2);
 }
+
+//Challenge #15
+const finalPosition = (moves) => {
+  var position = [0,0];
+  var x = 0;
+  var y = 1;
+  for(var i in moves){
+    switch(moves[i]){
+      case "north": position[y]++; break;
+      case "east": position[x]++; break;
+      case "south": position[y]--; break;
+      case "west": position[x]--; break;
+    }
+  }
+  return position;
+}

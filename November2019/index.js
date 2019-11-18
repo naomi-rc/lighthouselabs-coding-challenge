@@ -186,3 +186,9 @@ const toggleLights = function(lights, lightsAreOn) {
   return lights;
 }
 
+//Challenge #14
+const dynamicPricing = (numberOfPeople, distanceTraveled) => {
+  var price = 1 + (0.25 * distanceTraveled);
+  price += (numberOfPeople >= 30)? 0.25 : 0;
+  return "$" + price.toFixed(2);
+}

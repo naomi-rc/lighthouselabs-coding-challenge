@@ -219,3 +219,14 @@ const festivalColours = color1 => {
   splitComplimentary[1] = Math.max(h1, h2);
   return splitComplimentary;
 }
+
+//Challenge #17
+const judgeVegetable = (vegetables, metric) => {
+  var highest = vegetables[0];
+  for(var i in vegetables){
+    if(vegetables[i][metric] > highest[metric]){
+      highest = vegetables[i];
+    }
+  }
+  return highest.submitter;
+}

@@ -208,3 +208,14 @@ const finalPosition = (moves) => {
   }
   return position;
 }
+
+//Challenge #16
+const festivalColours = color1 => {
+  var splitComplimentary = [];
+  
+  var h1 = Math.abs((color1 + 150));
+  var h2 = Math.abs((color1 + 210));
+  splitComplimentary[0] = Math.min(h1, h2);
+  splitComplimentary[1] = Math.max(h1, h2);
+  return splitComplimentary;
+}

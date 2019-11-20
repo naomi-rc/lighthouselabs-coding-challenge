@@ -230,3 +230,27 @@ const judgeVegetable = (vegetables, metric) => {
   }
   return highest.submitter;
 }
+
+//Challenge #18
+const countTickets = (tickets) => {
+  var numOfTickets = {"red":0, "green":0, "blue":0};
+  for(var i in tickets){
+    numOfTickets[tickets[i]]++;
+  }
+  
+  return numOfTickets;
+}
+
+const bestOdds = (tickets, raffleEntries) => {
+  var numOfTickets = countTickets(tickets);
+  var bestOdd = "red";
+  
+  if(numOfTickets[bestOdd] < numOfTickets["blue"]){
+    bestOdd = "blue";
+  }
+  if(numOfTickets[bestOdd] < numOfTickets["green"]){
+    bestOdd = "green";
+  }
+ 
+  return  `You have the best odds of winning the `  + bestOdd +  ` raffle.`
+}

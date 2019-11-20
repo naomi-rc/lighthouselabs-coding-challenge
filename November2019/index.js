@@ -254,3 +254,20 @@ const bestOdds = (tickets, raffleEntries) => {
  
   return  `You have the best odds of winning the `  + bestOdd +  ` raffle.`
 }
+
+//Challenge #19
+const pumpkinSpice = money => {
+  var purchases = [0,0,0,0];
+  var costs = [5, 3, 1];
+  var spice = [30, 15, 3];
+  var moneyLeft = money;
+  
+  for(var i in costs){
+    purchases[i] = Math.floor(moneyLeft / costs[i]);
+    moneyLeft = moneyLeft - (purchases[i] * costs[i]);
+    purchases[3] += spice[i] * purchases[i];
+  }
+  
+  return purchases;
+}
+

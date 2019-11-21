@@ -297,3 +297,18 @@ const totalVolume = function (solids) {
   }
   return volume;
 }
+
+//Challenge #21
+const chooseRecipe = function(bakeryA, bakeryB, recipes) {
+  var chosenRecipe;
+  for(var i in recipes){
+    var ingredients = recipes[i].ingredients;
+      if(bakeryA.includes(ingredients[0]) || bakeryB.includes(ingredients[0])){
+        if(bakeryA.includes(ingredients[1]) || bakeryB.includes(ingredients[1])){
+          chosenRecipe = recipes[i].name;
+        }
+    }
+  }
+  return chosenRecipe;
+}
+

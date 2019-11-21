@@ -271,3 +271,29 @@ const pumpkinSpice = money => {
   return purchases;
 }
 
+//Challenge #20
+const PI = 3.14159 
+
+const sphereVolume = function (radius) {
+  return (4 * PI * Math.pow(radius, 3))/3;
+}
+
+const coneVolume = function (radius, height) {
+  return (PI * Math.pow(radius, 2) * height)/3;
+}
+
+const prismVolume = function (height, width, depth) {
+  return height * width * depth;
+}
+
+const totalVolume = function (solids) {
+  var volume = 0;
+  for(var i in solids){
+    switch(solids[i].type){
+      case "sphere": volume += sphereVolume(solids[i].radius); break;
+      case "cone": volume += coneVolume(solids[i].radius, solids[i].height); break;
+      case "prism": volume += prismVolume(solids[i].height, solids[i].width, solids[i].depth); break;
+    }
+  }
+  return volume;
+}
